@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins',sans-serif;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)),url(background2.jpg);
+    background-size: cover;
+    background-position:center;
+    padding:10px 8%;
+}
+nav{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 0;
+}
+.logo{
+    width:180px;
+    cursor:pointer;
+}
+nav ul{
+    list-style:none;
+    width:100%;
+    text-align:right;
+    padding-right:60px;
+}
+nav ul li{
+    display:inline-block;
+    margin:10px 20px;
+
+}
+nav ul li a{
+    color:antiquewhite;
+    text-decoration:none;
+}
+nav ul li a:hover{
+    color:#f5168d;
+}
+.btn{
+    display:flex;
+    align-items: center;
+    padding:10px 20px;
+    border:0;
+    outline:0;
+    border-radius: 5px;
+    background:#f5168d;
+    color:white;
+    font-weight:500;
+    cursor:pointer;
+}
+.btn img{
+    width:20px;
+    margin-right:10px;
+}
+.cuntainer{
+    max-width:700px;
+    width:100%;
+    background:antiquewhite;
+    padding:25px 30px;
+    border-radius:5px;
+    margin-bottom: 50px;
+    margin-top:50px;
+    
+}
+.cuntainer .tytle{
+    font-size:25px;
+    font-weight:500;
+    position:relative;
+}
+.cuntainer .tytle::before{
+    content:'';
+    position:absolute;
+    height:3px;
+    left:0;
+    bottom:0;
+    width:30px;
+    background:#9b59b6;
+}
+.cuntainer form .user-details{
+    display:flex;
+    flex-wrap:wrap;
+    margin:20px 0 12px 0;
+}
+.cuntainer form .user-details .input-bux{
+    width:calc(100% / 2 - 20px);
+    margin-bottom:15px;
+
+
+}
+.cuntainer form .user-details .input-bux input{
+   height:45px;
+   width:100%;
+   outline:none;
+   border-radius: 5px;
+   border:1px solid #ccc;
+   padding-left: 15px;
+   font-size:16px;
+   border-bottom-width: 2px;
+   transition:all 0.3s ease;
+}
+.cuntainer form .user-details .input-bux input .details{
+    font-weight: 500;
+    margin-bottom:5px;
+  
+    display:block;
+}
+.cuntainer form .user-details .input-bux input:focus,
+.cuntainer form .user-details .input-bux input:valid{
+   border-color:#9b59b6;
+}
+form .gender-details .gender-title{
+    font-size:20px;
+    font-weight:500;
+}
+form .gender-details .category{
+    width:80%;
+    display:flex;
+    justify-content:space-between;
+    margin:14px 0;
+}
+.gender-details .category label{
+    display:flex;
+    align-items:center;
+}
+.gender-details .category .dot{
+    height:18px;
+    width:18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right:10px;
+    border:5px solid transparent;
+
+}
+#dot-1:checked ~.category  label .one,
+#dot-2:checked ~.category  label .two,
+#dot-3:checked ~.category label .three{
+border-color:#d9d9d9;
+background:#9b59b6;
+}
+form input[type="radio"]{
+    display:none;
+}
+form .button{
+    height:45px;
+    margin:45px 0;
+
+}
+form .button input{
+    height:100%;
+    width:100%;
+    outline:none;
+    color:white;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);
+    border:none;
+    font-size:18px;
+    font-weight:500;
+    letter-spacing:1px;
+    border-radius:5px;
+}
+form .button input:hover{
+    background:linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
+footer{
+    background-color:black;
+    width:100%;
+}
+.footercontainer{
+    width:100%;
+    padding:70px 30px 20px;
+}
+.socialicon{
+    display:flex;
+    justify-content: center;
+
+}
+.socialicon img{
+    text-decoration: none;
+    padding:10px;
+    background-color:white;
+    margin:10px;
+    border-radius:50%;
+}
+.socialicon img:hover{
+    background-color:#111;
+    transition: 0.5s;
+}
+
+.footernav{
+    margin:30px 0;
+}
+.footernav ul{
+    display:flex;
+    justify-content:center;
+    text-decoration: none;
+}
+.footernav ul li a{
+    color:white;
+    margin:20px;
+    text-decoration:none;
+    font: size 1.3em;
+    opacity:0.7;
+    transition:0.5s;
+}
+.footernav ul li a:hover{
+    color:#f5168d;
+}
+.footernav ul li:hover{
+    opacity:1;
+}
+.footerbottom{
+    background:#000;
+    padding:20px;
+    text-align: center;
+}
+.footerbottom p{
+    color:white;
+}
+.container .btn a{
+    text-decoration:none;
+    color:white;
+}
+
+
+
